@@ -1,0 +1,155 @@
+body {
+    background-color: #0a0a0a;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.terminal {
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.terminal-header {
+    background-color: #111;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #00ff00;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 8px;
+    margin-right: 15px;
+}
+
+.terminal-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red {
+    background-color: #ff5f56;
+}
+
+.yellow {
+    background-color: #ffbd2e;
+}
+
+.green {
+    background-color: #27c93f;
+}
+
+.terminal-title {
+    font-size: 0.9rem;
+}
+
+.terminal-body {
+    padding: 15px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.terminal-line {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.prompt {
+    color: #00ff00;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.command {
+    color: #ffffff;
+}
+
+.output {
+    color: #00ff00;
+    margin-left: 25px;
+    white-space: pre-wrap;
+}
+
+h1 {
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.blinking-cursor {
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.cyber-link {
+    color: #00ff00;
+    text-decoration: none;
+    position: relative;
+}
+
+.cyber-link:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+.age-display {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff00;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00cc00;
+}
+
+.hidden {
+    display: none;
+}
